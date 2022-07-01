@@ -50,7 +50,7 @@ public class StepTracker {
         String str0 = String.format("Количество сожжённых килокалорий:    %.2f кал", converter.getOfFat(stepSum));
         System.out.println(str0);
 
-        String str1 = String.format("Пройденная дистанция:    %.2f   км", converter.getOfFat(stepSum));
+        String str1 = String.format("Пройденная дистанция:    %.2f   км", converter.conv(stepSum));
         System.out.println(str1);
     }
 
