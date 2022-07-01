@@ -4,16 +4,15 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         StepTracker tracker = new StepTracker();
-        printMenu();
-        tracker.createdDays();
+
 
         int userInput = scanner.nextInt();
         int months = 12;
         int days = 30;
 
-
-        while (userInput != 0) {
-
+        while (true) {
+            printMenu();
+            tracker.createdDays();
             if (userInput == 1) {
                 System.out.println("Введите номер месяца, за который хотите ввести шаги - ");
                 int userInputMonth = scanner.nextInt();
@@ -66,10 +65,10 @@ public class Main {
                     tracker.monthToData[i].defaultSteps = totalUserSteps;
                 }
             }
-            printMenu();
-            userInput = (int) scanner.nextDouble();
+            System.out.println("До свидания!");
+            return;
         }
-        System.out.println("До свидания!");
+
     }
     public static void printMenu() {
         System.out.println("Здравствуйте!");

@@ -9,7 +9,7 @@ public class StepTracker {
             monthToData[i] = new MonthData();
         }
     }
-    void createdDays (){
+    void createdDays () {
         for (int i = 0; i< monthToData.length; i++ ){
             monthToData[i].createArray();
         }
